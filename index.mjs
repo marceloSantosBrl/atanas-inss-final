@@ -4,9 +4,11 @@ const switcherInativoClasse = 'inline-block p-4 border-b-2 border-transparent' +
     'rounded-t-lg hover:text-gray-600 hover:border-gray-300 cursor-pointer'
 
 const salarioInput = document.getElementById('salarioInput');
-salarioInput.addEventListener('keydown', (event) => {
-    if ([' ', '.'].includes(event.key)) {
-        event.preventDefault();
+salarioInput.addEventListener('keydown', (e) => {
+    console.log(e.key)
+    if (!['1', '2', '3', '4', '5', '6', '7', '8', '9', ',', 'Backspace', 'Delete',
+        'ArrowRight', 'ArrowLeft'].includes(e.key)) {
+        e.preventDefault();
     }
 })
 
