@@ -3,11 +3,20 @@ const switcherAtivoClasse = 'inline-block p-4 text-yellow-600 ' +
 const switcherInativoClasse = 'inline-block p-4 border-b-2 border-transparent' +
     'rounded-t-lg hover:text-gray-600 hover:border-gray-300 cursor-pointer'
 
+const salarioInput = document.getElementById('salarioInput');
+salarioInput.addEventListener('keydown', (event) => {
+    if ([' ', '.'].includes(event.key)) {
+        event.preventDefault();
+    }
+})
+
+
 const estadoInicialSwitcher = [
     switcherInativoClasse,
     switcherInativoClasse,
     switcherInativoClasse
 ]
+
 
 const salarioButao = document.getElementById('salarioButao');
 const autonomoButao = document.getElementById('autonomoButao');
