@@ -937,3 +937,18 @@ input[type=number] {
 .block-header {
   padding: 0.5rem;
 }
+
+/* #container-cards {
+  height: 25rem !important;
+} */
+
+@media (min-width: 1024px) {
+  
+  #bloco-autonomo {
+    align-self: flex-start;
+  }
+  
+  #bloco-pro-labore {
+    align-self: flex-start;
+  }
+}

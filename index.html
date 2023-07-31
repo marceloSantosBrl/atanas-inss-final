@@ -101,10 +101,9 @@
     <div class="flex justify-center p-3">
         <span class="input-span p-1">R$</span>
         <input
-                oninvalid="this.setCustomValidity('Digite um número válido')"
-                oninput="this.setCustomValidity('')"
                 class=""
                 type="number"
+                step="0.01"
                 id="salarioInput"
                 name="salario"
         />
@@ -150,12 +149,12 @@
 <article
         id="container-cards"
         class="mt-10 flex flex-col ml-2 mr-2
-    lg:flex-row lg:gap-3 lg:items-center lg:justify-center lg:h-72">
+    lg:flex-row lg:gap-3 lg:items-center lg:justify-center">
     <!-- card 1 -->
 
     <section
             id="bloco-clt"
-            class="grid grid-cols-12 w-100 text-center shadow-lx">
+            class="grid grid-cols-12 w-100 text-center shadow-lx mt-4">
         <div class="col-span-12 text-center bg-yellow-Well card-header p-1 block-header">
             <h2>Salário (Carteira Assinada)</h2>
         </div>
@@ -186,8 +185,7 @@
 
     <section
             id="bloco-autonomo"
-            class="hidden grid-cols-12 w-100 rounded-md mt-4 text-center shadow-xl
-      lg:mt-0">
+            class="hidden grid-cols-12 w-100 rounded-md mt-4 text-center shadow-xl">
         <div class="col-span-12 text-center bg-yellow-Well card-header p-1 block-header">
             <h2>Autônomo (Carteira Assinada)</h2>
         </div>
@@ -211,8 +209,7 @@
 
     <section
             id="bloco-pro-labore"
-            class="hidden grid-cols-12 w-100 rounded-md mt-4 text-center shadow-xl
-      lg:mt-0">
+            class="hidden grid-cols-12 w-100 rounded-md mt-4 text-center shadow-xl">
         <div class="col-span-12 text-center bg-yellow-Well card-header p-1 block-header">
             <h2>Pró labore (Sócio)</h2>
         </div>

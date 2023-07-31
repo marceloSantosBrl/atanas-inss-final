@@ -5,8 +5,7 @@ const switcherInativoClasse = 'inline-block p-4 border-b-2 border-transparent' +
 
 const salarioInput = document.getElementById('salarioInput');
 salarioInput.addEventListener('keydown', (e) => {
-    if (!['1', '2', '3', '4', '5', '6', '7', '8', '9', ',', 'Backspace', 'Delete',
-        'ArrowRight', 'ArrowLeft'].includes(e.key)) {
+    if ([' '].includes(e.key)) {
         e.preventDefault();
     }
 })
