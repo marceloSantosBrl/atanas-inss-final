@@ -97,8 +97,7 @@ const obterProLabore = value => {
 
 const obterTotal = (valor, funcao) => valor * funcao(valor);
 
-const obterTexto = valor => `Quanto você deve pagar de Inss por mês: R$  
-${valor.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2})}`
+const obterTexto = valor => `Quanto você deve pagar de Inss por mês:\n R$ ${valor.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2})}`
 
 const formulario = document.getElementById("formularioSalario");
 
