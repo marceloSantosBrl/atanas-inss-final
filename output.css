@@ -952,3 +952,9 @@ input[type=number] {
     align-self: flex-start;
   }
 }
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  text-decoration: none;
+}
