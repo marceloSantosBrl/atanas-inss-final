@@ -87,7 +87,7 @@ const ativarBloco = (value, estado) => {
 
 const obterTotalClt = valor => {
     if (valor < 0) throw new Error('Salário Inválido');
-    const arrayPisos = [1_320, 2_571.29, 3_856.94, 7_507.49]
+    const arrayPisos = [1_412, 2_666.68, 4_000.03, 7_786,02]
     const aliquotas = [0.075, 0.09, 0.12, 0.14]
     let arrayValores = [0, 0, 0, 0]
     if (valor <= arrayPisos[0]) {
@@ -136,16 +136,16 @@ const obterTotalClt = valor => {
 
 const ObterTotalAutonomo = valor => {
     if (valor < 0) throw new Error('Salário Inválido');
-    if (valor > 7_507.49) {
-        return 7_507.49 * 0.20;
+    if (valor > 7_786,02) {
+        return 7_786,02 * 0.20;
     }
     return valor * 0.20;
 }
 
 const ObterTotalProLabore = valor => {
     if (valor < 0) throw new Error('Salário Inválido');
-    if (valor > 7_507.49) {
-        return 7_507.49 * 0.11;
+    if (valor > 7_786,02) {
+        return 7_786,02 * 0.11;
     }
     return valor * 0.11;
 }
